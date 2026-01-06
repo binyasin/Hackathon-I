@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <!-- Background -->
+  <rect width="900" height="600" fill="#FFFFFF"/>
+
+  <!-- Root: Torso -->
+  <rect x="375" y="50" width="150" height="80" fill="#3578E5" stroke="#1C1E21" stroke-width="3" rx="8"/>
+  <text x="450" y="85" text-anchor="middle" font-family="Arial" font-size="16" fill="#FFFFFF" font-weight="bold">Torso</text>
+  <text x="450" y="105" text-anchor="middle" font-family="Arial" font-size="12" fill="#FFFFFF">(Root Link)</text>
+
+  <!-- Head Chain -->
+  <line x1="450" y1="130" x2="450" y2="170" stroke="#1C1E21" stroke-width="2"/>
+  <rect x="400" y="170" width="100" height="60" fill="#3578E5" stroke="#1C1E21" stroke-width="2" rx="5"/>
+  <text x="450" y="195" text-anchor="middle" font-family="Arial" font-size="13" fill="#FFFFFF" font-weight="bold">Neck</text>
+  <text x="450" y="215" text-anchor="middle" font-family="Arial" font-size="11" fill="#FFFFFF">Head</text>
+
+  <!-- Left Arm Chain -->
+  <line x1="375" y1="90" x2="200" y2="280" stroke="#1C1E21" stroke-width="2"/>
+
+  <!-- Left Shoulder -->
+  <circle cx="200" cy="280" r="25" fill="#25C2A0" stroke="#1C1E21" stroke-width="2"/>
+  <text x="200" y="287" text-anchor="middle" font-family="Arial" font-size="10" fill="#FFFFFF" font-weight="bold">Shoulder</text>
+
+  <!-- Left Upper Arm -->
+  <line x1="200" y1="305" x2="200" y2="340" stroke="#1C1E21" stroke-width="2"/>
+  <rect x="155" y="340" width="90" height="50" fill="#3578E5" stroke="#1C1E21" stroke-width="2" rx="5"/>
+  <text x="200" y="370" text-anchor="middle" font-family="Arial" font-size="11" fill="#FFFFFF">Upper Arm</text>
+
+  <!-- Left Elbow -->
+  <line x1="200" y1="390" x2="200" y2="420" stroke="#1C1E21" stroke-width="2"/>
+  <circle cx="200" cy="420" r="20" fill="#25C2A0" stroke="#1C1E21" stroke-width="2"/>
+  <text x="200" y="426" text-anchor="middle" font-family="Arial" font-size="9" fill="#FFFFFF" font-weight="bold">Elbow</text>
+
+  <!-- Left Forearm and Hand -->
+  <line x1="200" y1="440" x2="200" y2="475" stroke="#1C1E21" stroke-width="2"/>
+  <rect x="160" y="475" width="80" height="45" fill="#3578E5" stroke="#1C1E21" stroke-width="2" rx="5"/>
+  <text x="200" y="493" text-anchor="middle" font-family="Arial" font-size="11" fill="#FFFFFF">Forearm</text>
+  <text x="200" y="508" text-anchor="middle" font-family="Arial" font-size="10" fill="#FFFFFF">Hand</text>
+
+  <!-- Right Arm Chain (mirror of left) -->
+  <line x1="525" y1="90" x2="700" y2="280" stroke="#1C1E21" stroke-width="2"/>
+
+  <!-- Right Shoulder -->
+  <circle cx="700" cy="280" r="25" fill="#25C2A0" stroke="#1C1E21" stroke-width="2"/>
+  <text x="700" y="287" text-anchor="middle" font-family="Arial" font-size="10" fill="#FFFFFF" font-weight="bold">Shoulder</text>
+
+  <!-- Right Upper Arm -->
+  <line x1="700" y1="305" x2="700" y2="340" stroke="#1C1E21" stroke-width="2"/>
+  <rect x="655" y="340" width="90" height="50" fill="#3578E5" stroke="#1C1E21" stroke-width="2" rx="5"/>
+  <text x="700" y="370" text-anchor="middle" font-family="Arial" font-size="11" fill="#FFFFFF">Upper Arm</text>
+
+  <!-- Right Elbow -->
+  <line x1="700" y1="390" x2="700" y2="420" stroke="#1C1E21" stroke-width="2"/>
+  <circle cx="700" cy="420" r="20" fill="#25C2A0" stroke="#1C1E21" stroke-width="2"/>
+  <text x="700" y="426" text-anchor="middle" font-family="Arial" font-size="9" fill="#FFFFFF" font-weight="bold">Elbow</text>
+
+  <!-- Right Forearm and Hand -->
+  <line x1="700" y1="440" x2="700" y2="475" stroke="#1C1E21" stroke-width="2"/>
+  <rect x="660" y="475" width="80" height="45" fill="#3578E5" stroke="#1C1E21" stroke-width="2" rx="5"/>
+  <text x="700" y="493" text-anchor="middle" font-family="Arial" font-size="11" fill="#FFFFFF">Forearm</text>
+  <text x="700" y="508" text-anchor="middle" font-family="Arial" font-size="10" fill="#FFFFFF">Hand</text>
+
+  <!-- Left Leg Chain -->
+  <line x1="400" y1="130" x2="300" y2="280" stroke="#1C1E21" stroke-width="2"/>
+
+  <!-- Left Hip -->
+  <circle cx="300" cy="280" r="25" fill="#25C2A0" stroke="#1C1E21" stroke-width="2"/>
+  <text x="300" y="287" text-anchor="middle" font-family="Arial" font-size="10" fill="#FFFFFF" font-weight="bold">Hip</text>
+
+  <!-- Left Thigh -->
+  <line x1="300" y1="305" x2="300" y2="340" stroke="#1C1E21" stroke-width="2"/>
+  <rect x="265" y="340" width="70" height="50" fill="#3578E5" stroke="#1C1E21" stroke-width="2" rx="5"/>
+  <text x="300" y="370" text-anchor="middle" font-family="Arial" font-size="11" fill="#FFFFFF">Thigh</text>
+
+  <!-- Left Knee -->
+  <line x1="300" y1="390" x2="300" y2="420" stroke="#1C1E21" stroke-width="2"/>
+  <circle cx="300" cy="420" r="20" fill="#25C2A0" stroke="#1C1E21" stroke-width="2"/>
+  <text x="300" y="426" text-anchor="middle" font-family="Arial" font-size="9" fill="#FFFFFF" font-weight="bold">Knee</text>
+
+  <!-- Left Shin and Foot -->
+  <line x1="300" y1="440" x2="300" y2="475" stroke="#1C1E21" stroke-width="2"/>
+  <rect x="270" y="475" width="60" height="45" fill="#3578E5" stroke="#1C1E21" stroke-width="2" rx="5"/>
+  <text x="300" y="493" text-anchor="middle" font-family="Arial" font-size="11" fill="#FFFFFF">Shin</text>
+  <text x="300" y="508" text-anchor="middle" font-family="Arial" font-size="10" fill="#FFFFFF">Foot</text>
+
+  <!-- Right Leg Chain (mirror of left) -->
+  <line x1="500" y1="130" x2="600" y2="280" stroke="#1C1E21" stroke-width="2"/>
+
+  <!-- Right Hip -->
+  <circle cx="600" cy="280" r="25" fill="#25C2A0" stroke="#1C1E21" stroke-width="2"/>
+  <text x="600" y="287" text-anchor="middle" font-family="Arial" font-size="10" fill="#FFFFFF" font-weight="bold">Hip</text>
+
+  <!-- Right Thigh -->
+  <line x1="600" y1="305" x2="600" y2="340" stroke="#1C1E21" stroke-width="2"/>
+  <rect x="565" y="340" width="70" height="50" fill="#3578E5" stroke="#1C1E21" stroke-width="2" rx="5"/>
+  <text x="600" y="370" text-anchor="middle" font-family="Arial" font-size="11" fill="#FFFFFF">Thigh</text>
+
+  <!-- Right Knee -->
+  <line x1="600" y1="390" x2="600" y2="420" stroke="#1C1E21" stroke-width="2"/>
+  <circle cx="600" cy="420" r="20" fill="#25C2A0" stroke="#1C1E21" stroke-width="2"/>
+  <text x="600" y="426" text-anchor="middle" font-family="Arial" font-size="9" fill="#FFFFFF" font-weight="bold">Knee</text>
+
+  <!-- Right Shin and Foot -->
+  <line x1="600" y1="440" x2="600" y2="475" stroke="#1C1E21" stroke-width="2"/>
+  <rect x="570" y="475" width="60" height="45" fill="#3578E5" stroke="#1C1E21" stroke-width="2" rx="5"/>
+  <text x="600" y="493" text-anchor="middle" font-family="Arial" font-size="11" fill="#FFFFFF">Shin</text>
+  <text x="600" y="508" text-anchor="middle" font-family="Arial" font-size="10" fill="#FFFFFF">Foot</text>
+
+  <!-- Labels -->
+  <text x="200" y="555" text-anchor="middle" font-family="Arial" font-size="11" fill="#666666">Left Arm</text>
+  <text x="300" y="555" text-anchor="middle" font-family="Arial" font-size="11" fill="#666666">Left Leg</text>
+  <text x="450" y="255" text-anchor="middle" font-family="Arial" font-size="11" fill="#666666">Head</text>
+  <text x="600" y="555" text-anchor="middle" font-family="Arial" font-size="11" fill="#666666">Right Leg</text>
+  <text x="700" y="555" text-anchor="middle" font-family="Arial" font-size="11" fill="#666666">Right Arm</text>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#1C1E21" font-weight="bold">Humanoid Robot Kinematic Chain Tree</text>
+
+  <!-- Note at bottom -->
+  <text x="450" y="585" text-anchor="middle" font-family="Arial" font-size="10" fill="#666666">
+    Hierarchical tree structure: Torso at root, with arms, legs, and head branching out
+  </text>
+</svg>
