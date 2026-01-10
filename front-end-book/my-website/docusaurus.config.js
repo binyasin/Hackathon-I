@@ -36,6 +36,11 @@ const config = {
     locales: ['en'],
   },
 
+  // Custom fields for RAG chatbot
+  customFields: {
+    RAG_BACKEND_URL: process.env.RAG_BACKEND_URL || 'http://localhost:3000',
+  },
+
   presets: [
     [
       'classic',
@@ -82,7 +87,7 @@ const config = {
             items: [
               {
                 label: 'Module 1: ROS 2 Nervous System',
-                to: '/intro',
+                to: '/',
               },
             ],
           },
