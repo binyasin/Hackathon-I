@@ -13,6 +13,11 @@ export default function ChatModal({ initialQuery, onClose }) {
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
 
+  // Check if we're in demo mode (production site with localhost backend)
+  const isProduction = typeof window !== 'undefined' &&
+    (window.location.hostname === 'binyasin.github.io' || window.location.hostname.includes('github.io'));
+  const isDemoMode = isProduction && backendUrl.includes('localhost');
+
   // Auto-scroll to bottom when messages change
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -71,12 +76,26 @@ export default function ChatModal({ initialQuery, onClose }) {
     } catch (error) {
       console.error('Query error:', error);
 
+      // Determine user-friendly error message
+      let errorContent = 'Sorry, I encountered an error processing your question. Please try again.';
+
+      if (error.message.includes('Rate limit')) {
+        errorContent = 'Rate limit exceeded. Please wait a moment and try again.';
+      } else if (error.message.includes('Failed to fetch') || error.message.includes('Network')) {
+        errorContent = 'Cannot connect to the chatbot backend. Please ensure the backend server is running on http://localhost:3000 or check your network connection.';
+      } else if (error.message.includes('HTTP 500') || error.message.includes('Internal Server')) {
+        errorContent = 'The backend encountered an error. This might be due to missing API keys or configuration issues. Check the backend logs for details.';
+      } else if (error.message.includes('HTTP 404')) {
+        errorContent = 'The chatbot API endpoint was not found. Please ensure the backend is properly configured.';
+      } else if (error.message) {
+        // Show the actual error message if it's informative
+        errorContent = `Error: ${error.message}`;
+      }
+
       // Add error message
       const errorMessage = {
         role: 'assistant',
-        content: error.message.includes('Rate limit')
-          ? 'Rate limit exceeded. Please wait a moment and try again.'
-          : 'Sorry, I encountered an error processing your question. Please try again.',
+        content: errorContent,
         error: true
       };
 
@@ -122,6 +141,14 @@ export default function ChatModal({ initialQuery, onClose }) {
             ×
           </button>
         </div>
+
+        {/* Demo Mode Notice */}
+        {isDemoMode && (
+          <div className={styles.demoBanner}>
+            <strong>📋 Demo Mode</strong>
+            <p>The AI chatbot backend is not currently deployed. This is a UI demonstration only. To enable full functionality, deploy the backend to Vercel and update the configuration.</p>
+          </div>
+        )}
 
         {/* Messages */}
         <div className={styles.messagesContainer}>

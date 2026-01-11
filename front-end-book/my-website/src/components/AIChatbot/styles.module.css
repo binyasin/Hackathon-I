@@ -125,6 +125,41 @@
   color: var(--ifm-color-emphasis-900);
 }
 
+/* Demo Mode Banner */
+.demoBanner {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  border-left: 4px solid #f39c12;
+  padding: 12px 24px;
+  margin: 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  flex-shrink: 0;
+}
+
+.demoBanner strong {
+  display: block;
+  color: #856404;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.demoBanner p {
+  margin: 0;
+  color: #856404;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Dark mode support for demo banner */
+html[data-theme='dark'] .demoBanner {
+  background: linear-gradient(135deg, #4a3f2a 0%, #5a4a2a 100%);
+  border-left-color: #d68910;
+}
+
+html[data-theme='dark'] .demoBanner strong,
+html[data-theme='dark'] .demoBanner p {
+  color: #ffc857;
+}
+
 /* Messages Container */
 .messagesContainer {
   flex: 1;
