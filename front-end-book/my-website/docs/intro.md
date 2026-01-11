@@ -2,6 +2,7 @@
 title: Welcome
 description: Physical AI & Humanoid Robotics — Essentials
 sidebar_position: 1
+slug: /
 ---
 
 # Physical AI & Humanoid Robotics — Essentials
