@@ -40,6 +40,18 @@ export default function ChatModal({ initialQuery, onClose }) {
   const handleQuery = async (query) => {
     if (!query || query.trim().length === 0) return;
 
+    // Check for demo mode
+    if (isDemoMode) {
+      const userMessage = { role: 'user', content: query };
+      const demoMessage = {
+        role: 'assistant',
+        content: '👋 This is a demo of the AI chatbot interface.\n\nThe full chatbot functionality requires a deployed backend with:\n• Groq API for language model\n• Pinecone vector database for content search\n• OpenAI embeddings for semantic matching\n\nThis interactive textbook is ready for AI-powered learning - the backend just needs to be deployed!',
+        error: false
+      };
+      setMessages(prev => [...prev, userMessage, demoMessage]);
+      return;
+    }
+
     // Add user message
     const userMessage = { role: 'user', content: query };
     setMessages(prev => [...prev, userMessage]);
@@ -154,8 +166,20 @@ export default function ChatModal({ initialQuery, onClose }) {
         <div className={styles.messagesContainer}>
           {messages.length === 0 && (
             <div className={styles.welcomeMessage}>
-              <p>👋 Hi! I'm your AI teaching assistant.</p>
-              <p>Ask me anything about the textbook content!</p>
+              {isDemoMode ? (
+                <>
+                  <p>👋 Welcome to the AI Chatbot Demo!</p>
+                  <p>Try asking a question to see how the interface works.</p>
+                  <p style={{fontSize: '0.9em', color: 'var(--ifm-color-emphasis-600)'}}>
+                    (Responses are simulated in demo mode)
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p>👋 Hi! I'm your AI teaching assistant.</p>
+                  <p>Ask me anything about the textbook content!</p>
+                </>
+              )}
             </div>
           )}
 
